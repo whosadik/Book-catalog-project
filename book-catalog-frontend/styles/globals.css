@@ -1,0 +1,201 @@
+/* 🌍 Глобальные стили */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  color: #333;
+}
+
+.bookpage {
+  margin: 2rem 2rem;
+}
+
+.profile {
+  margin: 2rem 2rem;
+}
+
+.rating {
+  width: 100px;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment {
+  width: 400px;
+}
+
+.add-book {
+  margin: 2rem 2rem;
+}
+
+.add-book-form {
+  width: 400px;
+}
+
+.login {
+  margin: 2rem 2rem;
+}
+.signup {
+  margin: 2rem 2rem;
+}
+/* 📌 Навбар */
+nav {
+  background: #0070f3;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffeb3b;
+}
+
+/* 📌 Кнопки */
+button {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #005bb5;
+  transform: scale(1.05);
+}
+
+/* 📌 Главная страница */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #222;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* 📌 Карточки книг */
+/* 📌 Карточки книг */
+.book-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px; /* Фиксированная высота */
+}
+
+.book-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.book-card p {
+  font-size: 0.9rem;
+  color: #555;
+  flex-grow: 1; /* Контент внутри карточки будет растягиваться */
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 📌 Кнопка в карточке */
+.book-card button {
+  width: 100%;
+  margin-top: 10px;
+  align-self: flex-end; /* Выравниваем кнопку вниз */
+}
+
+/* 📌 Форма */
+.form-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* 📌 Грид */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+/* 📌 Центрирование */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+  flex-direction: column;
+}
+
+.favorites {
+  margin: 2rem 2rem;
+}
+
+.favbook {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}

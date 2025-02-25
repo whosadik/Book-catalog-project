@@ -1,0 +1,121 @@
+/* 📌 Общие стили */
+.page-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* 📌 Фильтры */
+.filters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filters input,
+.filters select {
+  min-width: 150px;
+}
+
+/* 📌 Контейнер книг */
+.books-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+/* 📌 Карточка книги */
+.book-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: white;
+  overflow: hidden;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  width: 100%;
+  max-width: 300px;
+  height: 250px;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  transition: ease-in-out 0.3s;
+}
+
+/* 📌 Обложка книги */
+.book-cover {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f8f8;
+}
+
+/* 📌 Контент книги */
+.book-content {
+  padding: 15px;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* 📌 Заголовок */
+.book-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+}
+
+/* 📌 Автор */
+.book-author {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* 📌 Жанр */
+.book-genre {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* 📌 Год */
+.book-year {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* 📌 Кнопка "Подробнее" */
+.book-link {
+  align-self: center;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #0070f3;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  width: 10rem;
+}
+
+.book-link:hover {
+  background-color: #005bb5;
+}
